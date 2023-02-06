@@ -1,0 +1,300 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+
+nav {
+
+    display: flex;
+    width: 100%;
+}
+
+.main_header_2 {
+    width: 100%;
+    align-self: center;
+}
+.main_header_2 ul {
+    display: flex;
+    justify-content: end;
+    padding-right: 5%;
+
+}
+li {
+    list-style: none;
+    padding-right: 2%;
+}
+
+.image_banner {
+    display: flex;
+    position: relative;
+    width: 500%;
+    height: auto;
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+
+
+}
+.image_banner img {
+    width: 100%;
+    height: 20%;
+
+}
+@keyframes slider {
+    0% {
+        left: 0;
+
+    }
+    25% {
+        left: -100%;
+
+    }
+    50% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+
+
+}
+.main_content {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+   
+}
+.main_content_header p {
+    font-size: 21px;
+    font-weight: 500;
+    margin-left: 12%;
+
+}
+
+.main_content .content {
+    width: 14%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main_content .content img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.sub_content {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    position: absolute;
+    color: white;
+    bottom: 0%; 
+    padding: 4% 0;
+    
+}
+
+.sub_content p {
+    width: 80%;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.sub_content .right_text {
+    align-self: center;
+    width: 20%;
+    font-size: 13px;
+    background-color: rgb(30, 176, 180);
+}
+.network {
+    display: flex;
+    justify-content: center;
+    gap: 2.5%;
+}
+.network .im1 {
+    width: 20%;
+    height: auto;
+}
+.network .im1 img {
+    width: 100%;
+
+}
+
+footer {
+    padding: 2% 0 1%;
+
+
+}
+
+
+.language {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.lang {
+    height: 10%;
+}
+.line {
+    margin: auto;
+    width: 30%;
+    border: 1px solid white;
+}
+.fab {
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.footer-icon {
+    margin-top: 1%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+.icon-border {
+    background-color: #8d8d8d;
+    position: relative;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+}
+
+
+.fab,
+.fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+
+}
+.icon-border:hover {
+    background-color: rgb(30, 176, 180);
+
+
+}
+.footer-link {
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive begins here  */
+@media(max-width:600px) {
+  
+    .image_banner {
+        width: 100%;
+    }
+
+    .main_content_header p {
+        font-size: 14px;
+     
+        margin-left: 3%;
+    }
+    .main_content{
+        justify-content: start;
+        padding-left: 5%;
+     
+       
+    }
+
+    .main_content .content {
+        
+        /* flex-basis: 25%; */
+        width: calc(91%*1/2 );
+        height: 250px;
+      
+    }
+
+    .sub_content p{
+      
+         margin: 0%;
+         width: 75%;
+         padding: 0;
+        align-self: center;
+        font-size: 16px;
+     
+    }
+
+    .sub_content .right_text{
+        font-size: 16px;
+        width: 30%;
+    }
+
+}
+
+@media(min-width:600px) {
+    .image_banner {
+        width: 100%;
+    }
+}
+
+@media(min-width:768px) and (max-width:992px) {
+    .image_banner {
+        width: 100%;
+    }
+
+    li {
+        font-size: 28px;
+    }
+
+    .main_content_header p {
+       font-size: 30px;
+        margin-left: 3%;
+    }
+    .main_content{
+        justify-content: start;
+        padding-left: 5%;
+     
+       
+    }
+
+    .main_content .content {
+        
+        /* flex-basis: 25%; */
+        width: calc(92%*1/2 );
+        height: 500px;
+      
+    }
+   
+     .sub_content p{
+       
+          margin: 0%;
+          width: 75%;
+          padding: 0;
+      
+         font-size: 32px;
+      
+     }
+ 
+     .sub_content .right_text{
+        font-size: 32px;
+         width: 30%;
+     }
+}
+
+@media(min-width:992px) {
+    .image_banner {
+        width: 500%;
+    }
+
+}
+
+@media(min-width:1200px){
+    .image_banner{
+        width: 500%;
+    }
+
+}
